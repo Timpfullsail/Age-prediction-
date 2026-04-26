@@ -6,7 +6,7 @@ from ultralytics import YOLO
 cascPath = os.path.dirname(cv2.__file__) + "/data/haarcascade_frontalface_default.xml"
 faceCascade = cv2.CascadeClassifier(cascPath)
 
-AGE_BUCKETS = ["(0-2)", "(4-6)", "(8-12)", "(15-20)",
+AGE_BUCKETS = ["(0-2)","(4-6)","(8-12)","(15-20)","(20-24)",
                "(25-32)", "(38-43)", "(48-53)", "(60-100)"]
 BASE = os.path.dirname(os.path.abspath(__file__))
 age_net = cv2.dnn.readNet(
